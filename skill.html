@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Galley Skill</title>
+    <link rel="stylesheet" href="css/skill.css" />
+</head>
+
+<body>
+    <header>
+        <div class="teks3">
+            <h1>Skill</h1>
+        </div>
+    </header>
+
+    <div class="skill">
+        <div class="video">
+            <h2>Messi</h2>
+            <p>Nama Skill:</p>
+            <p>Posisi:</p>
+            <p>Asal Club:</p>
+            <p>Asal Negara:</p>
+            <p>Tahun:</p>
+            <p>Pertandingan:</p>
+            <a href="#target-1">
+                <video>
+                    <source src="video/Fighting.mp4" type="video/mp4" />
+                </video>
+            </a>
+
+            <div class="overlay" id="target-1">
+                <button onclick="playPause()">
+                    <a href="#" class="close">X Close</a>
+                </button>
+                <video controls="controls" id="myvideo">
+                    <source src="video/Fighting.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+        <div class="video">
+            <h2>Ronaldo</h2>
+            <p>Nama Skill:</p>
+            <p>Posisi:</p>
+            <p>Asal Club:</p>
+            <p>Asal Negara:</p>
+            <p>Tahun:</p>
+            <p>Pertandingan:</p>
+            <a href="#target-2">
+                <video>
+                    <source src="video/Crazy.mp4" type="video/mp4" />
+                </video>
+            </a>
+
+            <div class="overlay" id="target-2">
+                <button onclick="playPause1()">
+                    <a href="#" class="close">X Close</a>
+                </button>
+
+                <video controls="controls" id="myvideo1">
+                    <source src="video/Crazy.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <div class="video">
+            <h2>Aguero</h2>
+            <p>Nama Skill:</p>
+            <p>Posisi:</p>
+            <p>Asal Club:</p>
+            <p>Asal Negara:</p>
+            <p>Tahun:</p>
+            <p>Pertandingan:</p>
+            <a href="#target-3">
+                <video>
+                    <source src="video/Sprint.mp4" type="video/mp4" />
+                </video>
+            </a>
+
+            <div class="overlay" id="target-3">
+                <button onclick="playPause2()">
+                    <a href="#" class="close">X Close</a>
+                </button>
+
+                <video controls="controls" id="myvideo2">
+                    <source src="video/Sprint.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>All Gallery Copright By....</span>
+    </footer>
+    <script>
+        var myvideo = document.getElementById("myvideo");
+
+        function playPause() {
+            if (myvideo.pause());
+        }
+        var myvideo1 = document.getElementById("myvideo1");
+
+        function playPause1() {
+            if (myvideo1.pause());
+        }
+        var myvideo2 = document.getElementById("myvideo2");
+
+        function playPause2() {
+            if (myvideo2.pause());
+        }
+    </script>
+</body>
+
+</html>
